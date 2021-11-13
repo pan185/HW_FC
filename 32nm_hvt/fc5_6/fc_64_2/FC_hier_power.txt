@@ -1,0 +1,1089 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : FC
+Version: S-2021.06
+Date   : Wed Nov 10 15:25:20 2021
+****************************************
+
+
+Library(s) Used:
+
+    saed32hvt_tt0p85v25c (File: /cae/apps/data/saed32_edk-2018/lib/stdcell_hvt/db_nldm/saed32hvt_tt0p85v25c.db)
+
+
+Operating Conditions: tt0p85v25c   Library: saed32hvt_tt0p85v25c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+FC                     35000             saed32hvt_tt0p85v25c
+wreg                   16000             saed32hvt_tt0p85v25c
+in_BSG                 8000              saed32hvt_tt0p85v25c
+weight_BSG             8000              saed32hvt_tt0p85v25c
+neuron                 8000              saed32hvt_tt0p85v25c
+SobolRNGDim1           8000              saed32hvt_tt0p85v25c
+cmp_input              8000              saed32hvt_tt0p85v25c
+cnt_temporal           8000              saed32hvt_tt0p85v25c
+cmp_weight             8000              saed32hvt_tt0p85v25c
+comb_mult              8000              saed32hvt_tt0p85v25c
+PC                     8000              saed32hvt_tt0p85v25c
+accumulator            8000              saed32hvt_tt0p85v25c
+ReLU                   ForQA             saed32hvt_tt0p85v25c
+cntWithEn              ForQA             saed32hvt_tt0p85v25c
+LSZ                    ForQA             saed32hvt_tt0p85v25c
+SobolRNG               8000              saed32hvt_tt0p85v25c
+ShiftReg               ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_0    8000              saed32hvt_tt0p85v25c
+UnsignedAdderTree_1    8000              saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH32_0
+                       8000              saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH32_3
+                       8000              saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH32_1
+                       8000              saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH16_0
+                       8000              saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH16_7
+                       8000              saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH16_6
+                       8000              saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH8_0
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH8_15
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH8_14
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH4_0
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH4_31
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH4_30
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH4_27
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_0
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_0
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH32_2
+                       8000              saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH16_1
+                       8000              saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH16_2
+                       8000              saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH16_4
+                       8000              saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH16_3
+                       8000              saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH16_5
+                       8000              saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH8_1
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH8_2
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH8_3
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH8_4
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH8_7
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH8_8
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH8_11
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH8_12
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH8_5
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH8_6
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH8_9
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH8_10
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH8_13
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH4_1
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH4_3
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH4_5
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH4_7
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH4_13
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH4_15
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH4_21
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH4_23
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH4_29
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH4_2
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH4_4
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH4_6
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH4_8
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH4_10
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH4_12
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH4_14
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH4_16
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH4_18
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH4_20
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH4_22
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH4_24
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH4_26
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH4_28
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH4_9
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH4_11
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH4_17
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH4_19
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH4_25
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_1
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_2
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_3
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_4
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_5
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_6
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_7
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_8
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_9
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_10
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_11
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_12
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_13
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_14
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_15
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_16
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_17
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_18
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_19
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_20
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_21
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_22
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_23
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_24
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_25
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_26
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_27
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_28
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_29
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_30
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_31
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_32
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_33
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_34
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_35
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_36
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_37
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_38
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_39
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_40
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_41
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_42
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_43
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_44
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_45
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_46
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_47
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_48
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_49
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_50
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_51
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_52
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_53
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_54
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_55
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_56
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_57
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_58
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_59
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_60
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_61
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_62
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH2_63
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_1
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_2
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_3
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_4
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_5
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_6
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_7
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_8
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_9
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_10
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_11
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_12
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_13
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_14
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_15
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_16
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_17
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_18
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_19
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_20
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_21
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_22
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_23
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_24
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_25
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_26
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_27
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_28
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_29
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_30
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_31
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_32
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_33
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_34
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_35
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_36
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_37
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_38
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_39
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_40
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_41
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_42
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_43
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_44
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_45
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_46
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_47
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_48
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_49
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_50
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_51
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_52
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_53
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_54
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_55
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_56
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_57
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_58
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_59
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_60
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_61
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_62
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_63
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_64
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_65
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_66
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_67
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_68
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_69
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_70
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_71
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_72
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_73
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_74
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_75
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_76
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_77
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_78
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_79
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_80
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_81
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_82
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_83
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_84
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_85
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_86
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_87
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_88
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_89
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_90
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_91
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_92
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_93
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_94
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_95
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_96
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_97
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_98
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_99
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_100
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_101
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_102
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_103
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_104
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_105
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_106
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_107
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_108
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_109
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_110
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_111
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_112
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_113
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_114
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_115
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_116
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_117
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_118
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_119
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_120
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_121
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_122
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_123
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_124
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_125
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_126
+                       ForQA             saed32hvt_tt0p85v25c
+UnsignedAdderTree_DATA_WIDTH1_LENGTH1_127
+                       ForQA             saed32hvt_tt0p85v25c
+
+
+Global Operating Voltage = 0.85 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+FC                                     4.31e-02    0.921 2.75e+07   28.434 100.0
+  U_neuron (neuron)                    1.28e-02 6.19e-02 3.64e+06    3.719  13.1
+    U_ReLU (ReLU)                      4.62e-08 2.16e-06 8.78e+04 8.78e-02   0.3
+    U_accumulator (accumulator)        9.69e-04 2.21e-02 5.98e+05    0.621   2.2
+    U_pc (PC)                          1.13e-02 3.52e-02 2.51e+06    2.555   9.0
+      genblk1[1].U_adderTree (UnsignedAdderTree_1)
+                                       5.65e-03 1.76e-02 1.25e+06    1.278   4.5
+        genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH32_1)
+                                       2.75e-03 8.68e-03 6.06e+05    0.617   2.2
+          genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH16_1)
+                                       1.28e-03 4.00e-03 2.85e+05    0.290   1.0
+            genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH8_1)
+                                       5.68e-04 1.75e-03 1.29e+05    0.132   0.5
+              genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH4_1)
+                                       2.14e-04 5.76e-04 4.23e+04 4.30e-02   0.2
+                genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_1)
+                                       7.30e-05 1.64e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_1)
+                                       1.77e-05 2.88e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_2)
+                                       1.72e-05 2.84e-05 1.48e+03 1.52e-03   0.0
+                genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_2)
+                                       7.26e-05 1.63e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_3)
+                                       1.74e-05 2.83e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_4)
+                                       1.71e-05 2.83e-05 1.48e+03 1.52e-03   0.0
+              genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH4_2)
+                                       2.31e-04 5.98e-04 4.71e+04 4.80e-02   0.2
+                genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_3)
+                                       7.31e-05 1.64e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_5)
+                                       1.76e-05 2.86e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_6)
+                                       1.73e-05 2.86e-05 1.48e+03 1.52e-03   0.0
+                genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_4)
+                                       7.27e-05 1.64e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_7)
+                                       1.76e-05 2.86e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_8)
+                                       1.71e-05 2.83e-05 1.48e+03 1.52e-03   0.0
+            genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH8_2)
+                                       5.72e-04 1.76e-03 1.29e+05    0.132   0.5
+              genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH4_3)
+                                       2.18e-04 5.86e-04 4.23e+04 4.31e-02   0.2
+                genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_5)
+                                       7.45e-05 1.66e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_9)
+                                       1.78e-05 2.90e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_10)
+                                       1.74e-05 2.87e-05 1.48e+03 1.52e-03   0.0
+                genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_6)
+                                       7.35e-05 1.66e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_11)
+                                       1.79e-05 2.91e-05 1.48e+03 1.53e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_12)
+                                       1.74e-05 2.88e-05 1.48e+03 1.52e-03   0.0
+              genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH4_4)
+                                       2.32e-04 5.98e-04 4.71e+04 4.80e-02   0.2
+                genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_7)
+                                       7.30e-05 1.64e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_13)
+                                       1.74e-05 2.83e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_14)
+                                       1.73e-05 2.86e-05 1.48e+03 1.52e-03   0.0
+                genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_8)
+                                       7.26e-05 1.65e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_15)
+                                       1.73e-05 2.82e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_16)
+                                       1.76e-05 2.91e-05 1.48e+03 1.52e-03   0.0
+          genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH16_2)
+                                       1.28e-03 4.01e-03 2.85e+05    0.290   1.0
+            genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH8_3)
+                                       5.71e-04 1.75e-03 1.29e+05    0.132   0.5
+              genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH4_5)
+                                       2.16e-04 5.82e-04 4.22e+04 4.30e-02   0.2
+                genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_9)
+                                       7.38e-05 1.65e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_17)
+                                       1.75e-05 2.84e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_18)
+                                       1.74e-05 2.87e-05 1.48e+03 1.52e-03   0.0
+                genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_10)
+                                       7.35e-05 1.66e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_19)
+                                       1.75e-05 2.85e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_20)
+                                       1.75e-05 2.90e-05 1.48e+03 1.52e-03   0.0
+              genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH4_6)
+                                       2.32e-04 5.99e-04 4.71e+04 4.80e-02   0.2
+                genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_11)
+                                       7.30e-05 1.63e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_21)
+                                       1.75e-05 2.84e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_22)
+                                       1.70e-05 2.81e-05 1.48e+03 1.52e-03   0.0
+                genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_12)
+                                       7.29e-05 1.64e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_23)
+                                       1.76e-05 2.86e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_24)
+                                       1.72e-05 2.84e-05 1.48e+03 1.52e-03   0.0
+            genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH8_4)
+                                       5.73e-04 1.76e-03 1.29e+05    0.132   0.5
+              genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH4_7)
+                                       2.16e-04 5.80e-04 4.22e+04 4.30e-02   0.2
+                genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_13)
+                                       7.39e-05 1.65e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_25)
+                                       1.74e-05 2.83e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_26)
+                                       1.74e-05 2.88e-05 1.48e+03 1.52e-03   0.0
+                genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_14)
+                                       7.25e-05 1.64e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_27)
+                                       1.72e-05 2.80e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_28)
+                                       1.73e-05 2.87e-05 1.48e+03 1.52e-03   0.0
+              genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH4_8)
+                                       2.33e-04 6.03e-04 4.71e+04 4.80e-02   0.2
+                genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_15)
+                                       7.33e-05 1.64e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_29)
+                                       1.75e-05 2.84e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_30)
+                                       1.73e-05 2.85e-05 1.48e+03 1.52e-03   0.0
+                genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_16)
+                                       7.33e-05 1.65e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_31)
+                                       1.76e-05 2.86e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_32)
+                                       1.72e-05 2.85e-05 1.48e+03 1.52e-03   0.0
+        genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH32_2)
+                                       2.62e-03 8.01e-03 6.06e+05    0.616   2.2
+          genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH16_3)
+                                       1.21e-03 3.67e-03 2.85e+05    0.290   1.0
+            genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH8_5)
+                                       5.37e-04 1.58e-03 1.29e+05    0.132   0.5
+              genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH4_9)
+                                       1.98e-04 5.07e-04 4.22e+04 4.29e-02   0.2
+                genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_17)
+                                       6.53e-05 1.37e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_33)
+                                       1.47e-05 2.39e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_34)
+                                       1.45e-05 2.40e-05 1.48e+03 1.52e-03   0.0
+                genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_18)
+                                       6.45e-05 1.36e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_35)
+                                       1.43e-05 2.32e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_36)
+                                       1.45e-05 2.39e-05 1.48e+03 1.52e-03   0.0
+              genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH4_10)
+                                       2.14e-04 5.34e-04 4.71e+04 4.79e-02   0.2
+                genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_19)
+                                       6.55e-05 1.38e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_37)
+                                       1.47e-05 2.38e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_38)
+                                       1.46e-05 2.41e-05 1.48e+03 1.52e-03   0.0
+                genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_20)
+                                       6.48e-05 1.37e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_39)
+                                       1.43e-05 2.33e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_40)
+                                       1.47e-05 2.43e-05 1.48e+03 1.52e-03   0.0
+            genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH8_6)
+                                       5.37e-04 1.58e-03 1.29e+05    0.132   0.5
+              genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH4_11)
+                                       1.97e-04 5.06e-04 4.22e+04 4.29e-02   0.2
+                genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_21)
+                                       6.41e-05 1.36e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_41)
+                                       1.46e-05 2.37e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_42)
+                                       1.43e-05 2.36e-05 1.48e+03 1.52e-03   0.0
+                genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_22)
+                                       6.51e-05 1.37e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_43)
+                                       1.44e-05 2.34e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_44)
+                                       1.46e-05 2.41e-05 1.48e+03 1.52e-03   0.0
+              genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH4_12)
+                                       2.14e-04 5.33e-04 4.71e+04 4.79e-02   0.2
+                genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_23)
+                                       6.55e-05 1.38e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_45)
+                                       1.46e-05 2.38e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_46)
+                                       1.47e-05 2.44e-05 1.48e+03 1.52e-03   0.0
+                genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_24)
+                                       6.45e-05 1.37e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_47)
+                                       1.45e-05 2.35e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_48)
+                                       1.45e-05 2.40e-05 1.48e+03 1.52e-03   0.0
+          genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH16_4)
+                                       1.20e-03 3.64e-03 2.85e+05    0.290   1.0
+            genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH8_7)
+                                       5.32e-04 1.57e-03 1.29e+05    0.132   0.5
+              genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH4_13)
+                                       1.97e-04 5.07e-04 4.22e+04 4.29e-02   0.2
+                genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_25)
+                                       6.49e-05 1.37e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_49)
+                                       1.46e-05 2.37e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_50)
+                                       1.44e-05 2.38e-05 1.48e+03 1.52e-03   0.0
+                genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_26)
+                                       6.44e-05 1.36e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_51)
+                                       1.46e-05 2.37e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_52)
+                                       1.43e-05 2.37e-05 1.48e+03 1.52e-03   0.0
+              genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH4_14)
+                                       2.11e-04 5.25e-04 4.71e+04 4.78e-02   0.2
+                genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_27)
+                                       6.40e-05 1.35e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_53)
+                                       1.47e-05 2.38e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_54)
+                                       1.41e-05 2.33e-05 1.48e+03 1.52e-03   0.0
+                genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_28)
+                                       6.40e-05 1.35e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_55)
+                                       1.40e-05 2.28e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_56)
+                                       1.47e-05 2.43e-05 1.48e+03 1.52e-03   0.0
+            genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH8_8)
+                                       5.32e-04 1.57e-03 1.29e+05    0.132   0.5
+              genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH4_15)
+                                       1.96e-04 5.03e-04 4.22e+04 4.29e-02   0.2
+                genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_29)
+                                       6.51e-05 1.36e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_57)
+                                       1.44e-05 2.35e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_58)
+                                       1.44e-05 2.38e-05 1.48e+03 1.52e-03   0.0
+                genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_30)
+                                       6.35e-05 1.35e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_59)
+                                       1.46e-05 2.38e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_60)
+                                       1.40e-05 2.31e-05 1.48e+03 1.52e-03   0.0
+              genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH4_16)
+                                       2.10e-04 5.22e-04 4.71e+04 4.78e-02   0.2
+                genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_31)
+                                       6.39e-05 1.34e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_61)
+                                       1.43e-05 2.33e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_62)
+                                       1.43e-05 2.36e-05 1.48e+03 1.52e-03   0.0
+                genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_32)
+                                       6.36e-05 1.34e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_63)
+                                       1.42e-05 2.31e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_64)
+                                       1.42e-05 2.34e-05 1.48e+03 1.52e-03   0.0
+      genblk1[0].U_adderTree (UnsignedAdderTree_0)
+                                       5.65e-03 1.76e-02 1.25e+06    1.278   4.5
+        genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH32_3)
+                                       2.75e-03 8.68e-03 6.06e+05    0.617   2.2
+          genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH16_5)
+                                       1.27e-03 4.00e-03 2.85e+05    0.290   1.0
+            genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH8_9)
+                                       5.68e-04 1.75e-03 1.29e+05    0.132   0.5
+              genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH4_17)
+                                       2.14e-04 5.75e-04 4.23e+04 4.30e-02   0.2
+                genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_33)
+                                       7.29e-05 1.64e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_65)
+                                       1.76e-05 2.87e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_66)
+                                       1.72e-05 2.84e-05 1.48e+03 1.52e-03   0.0
+                genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_34)
+                                       7.24e-05 1.63e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_67)
+                                       1.74e-05 2.82e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_68)
+                                       1.71e-05 2.82e-05 1.48e+03 1.52e-03   0.0
+              genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH4_18)
+                                       2.32e-04 5.99e-04 4.71e+04 4.80e-02   0.2
+                genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_35)
+                                       7.30e-05 1.64e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_69)
+                                       1.75e-05 2.85e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_70)
+                                       1.73e-05 2.85e-05 1.48e+03 1.52e-03   0.0
+                genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_36)
+                                       7.28e-05 1.64e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_71)
+                                       1.76e-05 2.86e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_72)
+                                       1.71e-05 2.83e-05 1.48e+03 1.52e-03   0.0
+            genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH8_10)
+                                       5.72e-04 1.76e-03 1.29e+05    0.132   0.5
+              genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH4_19)
+                                       2.17e-04 5.85e-04 4.23e+04 4.31e-02   0.2
+                genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_37)
+                                       7.45e-05 1.66e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_73)
+                                       1.78e-05 2.90e-05 1.48e+03 1.53e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_74)
+                                       1.74e-05 2.87e-05 1.48e+03 1.52e-03   0.0
+                genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_38)
+                                       7.33e-05 1.66e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_75)
+                                       1.79e-05 2.90e-05 1.48e+03 1.53e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_76)
+                                       1.74e-05 2.88e-05 1.48e+03 1.52e-03   0.0
+              genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH4_20)
+                                       2.32e-04 5.98e-04 4.71e+04 4.80e-02   0.2
+                genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_39)
+                                       7.31e-05 1.64e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_77)
+                                       1.74e-05 2.83e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_78)
+                                       1.72e-05 2.85e-05 1.48e+03 1.52e-03   0.0
+                genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_40)
+                                       7.25e-05 1.64e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_79)
+                                       1.73e-05 2.81e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_80)
+                                       1.76e-05 2.90e-05 1.48e+03 1.52e-03   0.0
+          genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH16_6)
+                                       1.28e-03 4.01e-03 2.85e+05    0.290   1.0
+            genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH8_11)
+                                       5.71e-04 1.75e-03 1.29e+05    0.132   0.5
+              genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH4_21)
+                                       2.16e-04 5.82e-04 4.22e+04 4.30e-02   0.2
+                genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_41)
+                                       7.37e-05 1.65e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_81)
+                                       1.75e-05 2.84e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_82)
+                                       1.73e-05 2.86e-05 1.48e+03 1.52e-03   0.0
+                genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_42)
+                                       7.35e-05 1.66e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_83)
+                                       1.76e-05 2.86e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_84)
+                                       1.75e-05 2.89e-05 1.48e+03 1.52e-03   0.0
+              genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH4_22)
+                                       2.32e-04 6.00e-04 4.71e+04 4.80e-02   0.2
+                genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_43)
+                                       7.32e-05 1.63e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_85)
+                                       1.75e-05 2.84e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_86)
+                                       1.70e-05 2.81e-05 1.48e+03 1.52e-03   0.0
+                genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_44)
+                                       7.28e-05 1.64e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_87)
+                                       1.76e-05 2.86e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_88)
+                                       1.72e-05 2.84e-05 1.48e+03 1.52e-03   0.0
+            genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH8_12)
+                                       5.72e-04 1.75e-03 1.29e+05    0.132   0.5
+              genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH4_23)
+                                       2.15e-04 5.79e-04 4.22e+04 4.30e-02   0.2
+                genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_45)
+                                       7.40e-05 1.65e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_89)
+                                       1.74e-05 2.84e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_90)
+                                       1.74e-05 2.87e-05 1.48e+03 1.52e-03   0.0
+                genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_46)
+                                       7.23e-05 1.63e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_91)
+                                       1.73e-05 2.81e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_92)
+                                       1.73e-05 2.86e-05 1.48e+03 1.52e-03   0.0
+              genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH4_24)
+                                       2.33e-04 6.02e-04 4.71e+04 4.80e-02   0.2
+                genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_47)
+                                       7.33e-05 1.64e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_93)
+                                       1.75e-05 2.84e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_94)
+                                       1.72e-05 2.85e-05 1.48e+03 1.52e-03   0.0
+                genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_48)
+                                       7.32e-05 1.64e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_95)
+                                       1.76e-05 2.86e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_96)
+                                       1.72e-05 2.84e-05 1.48e+03 1.52e-03   0.0
+        genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH32_0)
+                                       2.62e-03 8.01e-03 6.06e+05    0.616   2.2
+          genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH16_7)
+                                       1.21e-03 3.67e-03 2.85e+05    0.290   1.0
+            genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH8_13)
+                                       5.37e-04 1.58e-03 1.29e+05    0.132   0.5
+              genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH4_25)
+                                       1.97e-04 5.06e-04 4.22e+04 4.29e-02   0.2
+                genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_49)
+                                       6.50e-05 1.37e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_97)
+                                       1.46e-05 2.37e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_98)
+                                       1.44e-05 2.39e-05 1.48e+03 1.52e-03   0.0
+                genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_50)
+                                       6.46e-05 1.36e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_99)
+                                       1.43e-05 2.32e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_100)
+                                       1.46e-05 2.41e-05 1.48e+03 1.52e-03   0.0
+              genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH4_26)
+                                       2.14e-04 5.35e-04 4.71e+04 4.79e-02   0.2
+                genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_51)
+                                       6.56e-05 1.38e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_101)
+                                       1.47e-05 2.39e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_102)
+                                       1.46e-05 2.41e-05 1.48e+03 1.52e-03   0.0
+                genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_52)
+                                       6.48e-05 1.37e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_103)
+                                       1.44e-05 2.34e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_104)
+                                       1.47e-05 2.43e-05 1.48e+03 1.52e-03   0.0
+            genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH8_14)
+                                       5.37e-04 1.58e-03 1.29e+05    0.132   0.5
+              genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH4_27)
+                                       1.97e-04 5.06e-04 4.22e+04 4.29e-02   0.2
+                genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_53)
+                                       6.40e-05 1.36e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_105)
+                                       1.45e-05 2.36e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_106)
+                                       1.43e-05 2.37e-05 1.48e+03 1.52e-03   0.0
+                genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_54)
+                                       6.50e-05 1.37e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_107)
+                                       1.44e-05 2.34e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_108)
+                                       1.46e-05 2.42e-05 1.48e+03 1.52e-03   0.0
+              genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH4_28)
+                                       2.13e-04 5.32e-04 4.71e+04 4.79e-02   0.2
+                genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_55)
+                                       6.54e-05 1.38e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_109)
+                                       1.47e-05 2.38e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_110)
+                                       1.47e-05 2.43e-05 1.48e+03 1.52e-03   0.0
+                genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_56)
+                                       6.43e-05 1.36e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_111)
+                                       1.44e-05 2.35e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_112)
+                                       1.45e-05 2.40e-05 1.48e+03 1.52e-03   0.0
+          genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH16_0)
+                                       1.20e-03 3.64e-03 2.85e+05    0.290   1.0
+            genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH8_15)
+                                       5.33e-04 1.57e-03 1.29e+05    0.132   0.5
+              genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH4_29)
+                                       1.97e-04 5.07e-04 4.22e+04 4.29e-02   0.2
+                genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_57)
+                                       6.50e-05 1.37e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_113)
+                                       1.46e-05 2.37e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_114)
+                                       1.45e-05 2.39e-05 1.48e+03 1.52e-03   0.0
+                genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_58)
+                                       6.43e-05 1.36e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_115)
+                                       1.46e-05 2.37e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_116)
+                                       1.43e-05 2.37e-05 1.48e+03 1.52e-03   0.0
+              genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH4_30)
+                                       2.11e-04 5.26e-04 4.71e+04 4.78e-02   0.2
+                genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_59)
+                                       6.42e-05 1.36e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_117)
+                                       1.47e-05 2.38e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_118)
+                                       1.42e-05 2.34e-05 1.48e+03 1.52e-03   0.0
+                genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_60)
+                                       6.40e-05 1.36e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_119)
+                                       1.40e-05 2.28e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_120)
+                                       1.47e-05 2.43e-05 1.48e+03 1.52e-03   0.0
+            genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH8_0)
+                                       5.31e-04 1.56e-03 1.29e+05    0.132   0.5
+              genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH4_31)
+                                       1.95e-04 5.02e-04 4.22e+04 4.29e-02   0.2
+                genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_61)
+                                       6.51e-05 1.36e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_121)
+                                       1.45e-05 2.35e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_122)
+                                       1.44e-05 2.38e-05 1.48e+03 1.52e-03   0.0
+                genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_62)
+                                       6.33e-05 1.34e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_123)
+                                       1.46e-05 2.37e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_124)
+                                       1.39e-05 2.30e-05 1.48e+03 1.52e-03   0.0
+              genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH4_0)
+                                       2.10e-04 5.22e-04 4.71e+04 4.78e-02   0.2
+                genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_63)
+                                       6.37e-05 1.34e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_125)
+                                       1.42e-05 2.31e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_126)
+                                       1.43e-05 2.36e-05 1.48e+03 1.52e-03   0.0
+                genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_0)
+                                       6.36e-05 1.34e-04 1.09e+04 1.11e-02   0.0
+                  genblk1.subtree_b (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_127)
+                                       1.42e-05 2.30e-05 1.48e+03 1.52e-03   0.0
+                  genblk1.subtree_a (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_0)
+                                       1.42e-05 2.34e-05 1.48e+03 1.52e-03   0.0
+    U_comb_mult (comb_mult)            4.90e-04 4.68e-03 4.50e+05    0.455   1.6
+  U_weight_bsg (weight_BSG)            8.14e-03 4.24e-02 5.27e+06    5.320  18.7
+    U_weight_temporal_cmp (cmp_weight) 7.60e-03 1.72e-02 4.65e+06    4.674  16.4
+    U_weight_temporal_cnt (cnt_temporal)
+                                       5.41e-04 2.52e-02 6.20e+05    0.646   2.3
+  U_in_bsg (in_BSG)                    4.47e-03 2.66e-02 2.36e+06    2.394   8.4
+    U_input_rate_cmp (cmp_input)       3.82e-03 7.74e-03 1.72e+06    1.729   6.1
+    U_input_rng (SobolRNGDim1)         6.47e-04 1.89e-02 6.45e+05    0.665   2.3
+      U_shiftreg (ShiftReg)            3.98e-05 5.96e-03 1.37e+05    0.143   0.5
+      u_SobolRNG (SobolRNG)            3.67e-04 6.54e-03 3.20e+05    0.326   1.1
+      u_LSZ (LSZ)                      5.80e-05 9.85e-05 3.16e+04 3.17e-02   0.1
+      u_cntWithEn (cntWithEn)          1.83e-04 6.29e-03 1.57e+05    0.163   0.6
+  U_reg_weight (wreg)                  1.77e-02    0.790 1.62e+07   17.000  59.8
+1

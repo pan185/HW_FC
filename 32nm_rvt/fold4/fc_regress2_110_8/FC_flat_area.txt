@@ -1,0 +1,35 @@
+Warning: Design 'FC' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : area
+Design : FC
+Version: S-2021.06
+Date   : Fri Nov 12 14:01:22 2021
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'FC' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    saed32rvt_tt0p85v25c (File: /cae/apps/data/saed32_edk-2018/lib/stdcell_rvt/db_nldm/saed32rvt_tt0p85v25c.db)
+
+Number of ports:                         9926
+Number of nets:                         40434
+Number of cells:                        28146
+Number of combinational cells:          19184
+Number of sequential cells:              8960
+Number of macros/black boxes:               0
+Number of buf/inv:                       3528
+Number of references:                      32
+
+Combinational area:              46907.104185
+Buf/Inv area:                     5347.189888
+Noncombinational area:           63754.056659
+Macro/Black Box area:                0.000000
+Net Interconnect area:           63719.813614
+
+Total cell area:                110661.160844
+Total area:                     174380.974458
+
+Information: This design contains black box (unknown) components. (RPT-8)
+1

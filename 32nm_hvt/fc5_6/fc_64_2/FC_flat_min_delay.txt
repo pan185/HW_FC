@@ -1,0 +1,51 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : FC
+Version: S-2021.06
+Date   : Wed Nov 10 15:26:30 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt0p85v25c   Library: saed32hvt_tt0p85v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: weight[1][0][8]
+              (input port clocked by clk)
+  Endpoint: U_reg_weight/out__reg[1][0][8]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FC                 35000                 saed32hvt_tt0p85v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.25       0.25 f
+  weight[1][0][8] (in)                                    0.00       0.25 f
+  U1074/Y (AO22X1_HVT)                                    0.11       0.36 f
+  U_reg_weight/out__reg[1][0][8]/D (DFFARX1_HVT)          0.01       0.36 f
+  data arrival time                                                  0.36
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  U_reg_weight/out__reg[1][0][8]/CLK (DFFARX1_HVT)        0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.36
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.22
+
+
+1
