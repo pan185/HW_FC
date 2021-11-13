@@ -435,20 +435,6 @@ def prune(input_list):
             l.append(e)
 
     return l
-
-def main():
-    parser = argparse.ArgumentParser(description='')
-    parser.add_argument('--silence', default=False, action='store_true', help='Mute ploting figures')
-    parser.add_argument('--no_update', default=False, action='store_true', help='Skip regenerating updated stats csv')
-    args = parser.parse_args()
-
-    if args.no_update == False:
-        # Call regen_stats() once before get_list()
-        regen_stats(args.silence)
-    else: # no update, direct parse
-        print(get_list('rvt', 'area', 'Total'))
-        print(get_list('rvt', 'leakage', 'CMP'))
-        print(get_list('rvt', 'freq'))
     
 def regen_stats(silence=False):
     print("************ Parsing Syn Results**************\n")
@@ -631,6 +617,20 @@ def plot_regress_model(model, range_, x_train, y_train, path, type='Area'):
     
     fig.suptitle('{} regression for {}'.format(type, path))
     plt.savefig(f'{path}{type}_model.png')
+
+def main():
+    parser = argparse.ArgumentParser(description='')
+    parser.add_argument('--silence', default=False, action='store_true', help='Mute ploting figures')
+    parser.add_argument('--no_update', default=False, action='store_true', help='Skip regenerating updated stats csv')
+    args = parser.parse_args()
+
+    if args.no_update == False:
+        # Call regen_stats() once before get_list()
+        regen_stats(args.silence)
+    else: # no update, direct parse
+        print(get_list('rvt', 'area', 'Total'))
+        print(get_list('rvt', 'leakage', 'CMP'))
+        print(get_list('rvt', 'freq'))
 
 if __name__ == "__main__":
     main()
