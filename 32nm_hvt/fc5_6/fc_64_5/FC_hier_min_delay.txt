@@ -1,0 +1,56 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : FC
+Version: S-2021.06
+Date   : Wed Nov 10 15:35:58 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt0p85v25c   Library: saed32hvt_tt0p85v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: U_neuron/U_accumulator/sum__reg[0][14]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U_neuron/U_accumulator/sum__reg[0][14]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FC                 70000                 saed32hvt_tt0p85v25c
+  accumulator        8000                  saed32hvt_tt0p85v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U_neuron/U_accumulator/sum__reg[0][14]/CLK (DFFARX1_HVT)
+                                                          0.00 #     0.00 r
+  U_neuron/U_accumulator/sum__reg[0][14]/QN (DFFARX1_HVT)
+                                                          0.22       0.22 f
+  U_neuron/U_accumulator/U106/Y (AO22X1_HVT)              0.12       0.34 f
+  U_neuron/U_accumulator/sum__reg[0][14]/D (DFFARX1_HVT)
+                                                          0.01       0.35 f
+  data arrival time                                                  0.35
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                       0.15       0.15
+  U_neuron/U_accumulator/sum__reg[0][14]/CLK (DFFARX1_HVT)
+                                                          0.00       0.15 r
+  library hold time                                       0.00       0.15
+  data required time                                                 0.15
+  --------------------------------------------------------------------------
+  data required time                                                 0.15
+  data arrival time                                                 -0.35
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.20
+
+
+1

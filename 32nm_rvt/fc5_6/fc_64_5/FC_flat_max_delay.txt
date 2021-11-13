@@ -1,0 +1,97 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FC
+Version: S-2021.06
+Date   : Wed Nov 10 17:12:01 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt0p85v25c   Library: saed32rvt_tt0p85v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: U_weight_bsg/U_weight_temporal_cnt/cnt_reg[0][2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U_neuron/U_accumulator/sum__reg[0][15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FC                 70000                 saed32rvt_tt0p85v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U_weight_bsg/U_weight_temporal_cnt/cnt_reg[0][2]/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  U_weight_bsg/U_weight_temporal_cnt/cnt_reg[0][2]/QN (DFFARX1_RVT)
+                                                          0.11       0.11 r
+  U13780/Y (INVX1_RVT)                                    0.18       0.29 f
+  U13232/Y (INVX1_RVT)                                    0.26       0.55 r
+  U11737/Y (NAND2X1_RVT)                                  0.41       0.96 f
+  U12530/Y (INVX1_RVT)                                    0.40       1.36 r
+  U12525/Y (NAND2X0_RVT)                                  0.36       1.72 f
+  U11791/Y (INVX1_RVT)                                    0.27       1.99 r
+  U11794/Y (INVX1_RVT)                                    0.44       2.43 f
+  U11782/Y (INVX1_RVT)                                    0.36       2.79 r
+  U11013/Y (AO22X1_RVT)                                   0.34       3.13 r
+  U11012/Y (AO221X1_RVT)                                  0.18       3.30 r
+  U11011/Y (AO222X1_RVT)                                  0.20       3.51 r
+  U11010/Y (AO222X1_RVT)                                  0.21       3.72 r
+  U11009/Y (AO21X1_RVT)                                   0.19       3.90 r
+  U11006/Y (AO22X1_RVT)                                   0.17       4.07 r
+  U11004/Y (AO22X1_RVT)                                   0.16       4.23 r
+  U14146/Y (XOR2X1_RVT)                                   0.30       4.54 f
+  U13660/Y (XOR2X1_RVT)                                   0.37       4.91 r
+  U13234/Y (XOR2X1_RVT)                                   0.35       5.26 f
+  U5019/Y (NAND2X0_RVT)                                   0.19       5.44 r
+  U13230/Y (XNOR3X1_RVT)                                  0.38       5.83 r
+  U_neuron/U_pc/genblk1[0].U_adderTree/genblk1.subtree_b/genblk1.subtree_a/add_58/U1_1/S (FADDX1_RVT)
+                                                          0.51       6.34 f
+  U_neuron/U_pc/genblk1[0].U_adderTree/genblk1.subtree_b/add_58/U1_1/S (FADDX1_RVT)
+                                                          0.51       6.85 r
+  U_neuron/U_pc/genblk1[0].U_adderTree/add_58/U1_1/CO (FADDX1_RVT)
+                                                          0.45       7.30 r
+  U_neuron/U_pc/genblk1[0].U_adderTree/add_58/U1_2/CO (FADDX1_RVT)
+                                                          0.36       7.66 r
+  U_neuron/U_pc/genblk1[0].U_adderTree/add_58/U1_3/CO (FADDX1_RVT)
+                                                          0.36       8.02 r
+  U_neuron/U_pc/genblk1[0].U_adderTree/add_58/U1_4/CO (FADDX1_RVT)
+                                                          0.36       8.37 r
+  U_neuron/U_pc/genblk1[0].U_adderTree/add_58/U1_5/S (FADDX1_RVT)
+                                                          0.41       8.78 f
+  U_neuron/U_accumulator/add_167/U1_5/CO (FADDX1_RVT)     0.44       9.22 f
+  U_neuron/U_accumulator/add_167/U1_6/CO (FADDX1_RVT)     0.35       9.57 f
+  U5111/Y (AND3X1_RVT)                                    0.17       9.74 f
+  U5110/Y (AND4X1_RVT)                                    0.20       9.94 f
+  U5109/Y (AND2X1_RVT)                                    0.19      10.13 f
+  U5108/Y (AND2X1_RVT)                                    0.19      10.33 f
+  U5107/Y (NAND2X0_RVT)                                   0.19      10.52 r
+  U13910/Y (OAI21X1_RVT)                                  0.21      10.73 f
+  U5105/Y (NAND2X0_RVT)                                   0.14      10.87 r
+  U_neuron/U_accumulator/sum__reg[0][15]/D (DFFARX1_RVT)
+                                                          0.10      10.97 r
+  data arrival time                                                 10.97
+
+  clock clk (rise edge)                                7600.00    7600.00
+  clock network delay (ideal)                             0.00    7600.00
+  clock uncertainty                                      -0.15    7599.85
+  U_neuron/U_accumulator/sum__reg[0][15]/CLK (DFFARX1_RVT)
+                                                          0.00    7599.85 r
+  library setup time                                     -0.06    7599.79
+  data required time                                              7599.79
+  --------------------------------------------------------------------------
+  data required time                                              7599.79
+  data arrival time                                                -10.97
+  --------------------------------------------------------------------------
+  slack (MET)                                                     7588.81
+
+
+1

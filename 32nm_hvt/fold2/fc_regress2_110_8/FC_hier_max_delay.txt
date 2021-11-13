@@ -1,0 +1,239 @@
+Warning: Design 'FC' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FC
+Version: S-2021.06
+Date   : Thu Nov 11 19:49:24 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt0p85v25c   Library: saed32hvt_tt0p85v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: U_weight_bsg/U_weight_temporal_cnt/cnt_reg[1][1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U_neuron/U_accumulator/sum_0_reg[3][16]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FC                 140000                saed32hvt_tt0p85v25c
+  weight_BSG         35000                 saed32hvt_tt0p85v25c
+  cmp_weight         35000                 saed32hvt_tt0p85v25c
+  neuron             16000                 saed32hvt_tt0p85v25c
+  UnsignedAdderTree_DATA_WIDTH1_LENGTH2_41
+                     ForQA                 saed32hvt_tt0p85v25c
+  UnsignedAdderTree_DATA_WIDTH1_LENGTH3_15
+                     ForQA                 saed32hvt_tt0p85v25c
+  UnsignedAdderTree_DATA_WIDTH1_LENGTH7_13
+                     ForQA                 saed32hvt_tt0p85v25c
+  UnsignedAdderTree_DATA_WIDTH1_LENGTH14_6
+                     ForQA                 saed32hvt_tt0p85v25c
+  UnsignedAdderTree_DATA_WIDTH1_LENGTH27_2
+                     8000                  saed32hvt_tt0p85v25c
+  UnsignedAdderTree_DATA_WIDTH1_LENGTH55_2
+                     8000                  saed32hvt_tt0p85v25c
+  UnsignedAdderTree_DATA_WIDTH1_LENGTH55_2_DW01_add_0_DW01_add_21
+                     ForQA                 saed32hvt_tt0p85v25c
+  UnsignedAdderTree_1
+                     8000                  saed32hvt_tt0p85v25c
+  UnsignedAdderTree_1_DW01_add_0_DW01_add_13
+                     ForQA                 saed32hvt_tt0p85v25c
+  accumulator        8000                  saed32hvt_tt0p85v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U_weight_bsg/U_weight_temporal_cnt/cnt_reg[1][1]/CLK (DFFARX1_HVT)
+                                                          0.00 #     0.00 r
+  U_weight_bsg/U_weight_temporal_cnt/cnt_reg[1][1]/Q (DFFARX1_HVT)
+                                                          0.40       0.40 f
+  U_weight_bsg/U_weight_temporal_cnt/cntOut[1][1] (cnt_temporal)
+                                                          0.00       0.40 f
+  U_weight_bsg/U_weight_temporal_cmp/rng_cnt[1][1] (cmp_weight)
+                                                          0.00       0.40 f
+  U_weight_bsg/U_weight_temporal_cmp/U9236/Y (INVX1_HVT)
+                                                          0.09       0.48 r
+  U_weight_bsg/U_weight_temporal_cmp/U9106/Y (INVX1_HVT)
+                                                          0.10       0.58 f
+  U_weight_bsg/U_weight_temporal_cmp/U8737/Y (INVX2_HVT)
+                                                          0.11       0.69 r
+  U_weight_bsg/U_weight_temporal_cmp/U5232/Y (AND2X1_HVT)
+                                                          0.16       0.85 r
+  U_weight_bsg/U_weight_temporal_cmp/U8503/Y (NBUFFX2_HVT)
+                                                          0.11       0.96 r
+  U_weight_bsg/U_weight_temporal_cmp/U8164/Y (NBUFFX2_HVT)
+                                                          0.11       1.07 r
+  U_weight_bsg/U_weight_temporal_cmp/U8362/Y (NBUFFX2_HVT)
+                                                          0.14       1.21 r
+  U_weight_bsg/U_weight_temporal_cmp/U5227/Y (AND2X1_HVT)
+                                                          0.17       1.38 r
+  U_weight_bsg/U_weight_temporal_cmp/U8502/Y (NBUFFX2_HVT)
+                                                          0.11       1.49 r
+  U_weight_bsg/U_weight_temporal_cmp/U8163/Y (NBUFFX2_HVT)
+                                                          0.11       1.60 r
+  U_weight_bsg/U_weight_temporal_cmp/U8359/Y (NBUFFX2_HVT)
+                                                          0.14       1.74 r
+  U_weight_bsg/U_weight_temporal_cmp/U1895/Y (AO22X1_HVT)
+                                                          0.21       1.94 r
+  U_weight_bsg/U_weight_temporal_cmp/U1894/Y (AO221X1_HVT)
+                                                          0.18       2.12 r
+  U_weight_bsg/U_weight_temporal_cmp/U6983/Y (AOI222X1_HVT)
+                                                          0.37       2.49 f
+  U_weight_bsg/U_weight_temporal_cmp/U6997/Y (INVX1_HVT)
+                                                          0.06       2.55 r
+  U_weight_bsg/U_weight_temporal_cmp/U5624/Y (AOI222X1_HVT)
+                                                          0.33       2.88 f
+  U_weight_bsg/U_weight_temporal_cmp/U5640/Y (INVX1_HVT)
+                                                          0.06       2.94 r
+  U_weight_bsg/U_weight_temporal_cmp/U1891/Y (AO21X1_HVT)
+                                                          0.19       3.13 r
+  U_weight_bsg/U_weight_temporal_cmp/U1888/Y (AO22X1_HVT)
+                                                          0.23       3.36 r
+  U_weight_bsg/U_weight_temporal_cmp/U1886/Y (AO22X1_HVT)
+                                                          0.18       3.54 r
+  U_weight_bsg/U_weight_temporal_cmp/cmp_out[3][14] (cmp_weight)
+                                                          0.00       3.54 r
+  U_weight_bsg/weight_temporal[3][14] (weight_BSG)        0.00       3.54 r
+  U_neuron/weight_temporal[3][14] (neuron)                0.00       3.54 r
+  U_neuron/U_comb_mult/weight[3][14] (comb_mult)          0.00       3.54 r
+  U_neuron/U_comb_mult/U64/Y (XNOR2X1_HVT)                0.48       4.02 r
+  U_neuron/U_comb_mult/mult_out[3][14] (comb_mult)        0.00       4.02 r
+  U_neuron/U_pc/mulOut[3][14] (PC)                        0.00       4.02 r
+  U_neuron/U_pc/genblk1[3].U_adderTree/in_addends[14][0] (UnsignedAdderTree_1)
+                                                          0.00       4.02 r
+  U_neuron/U_pc/genblk1[3].U_adderTree/genblk1.subtree_a/in_addends[14][0] (UnsignedAdderTree_DATA_WIDTH1_LENGTH55_2)
+                                                          0.00       4.02 r
+  U_neuron/U_pc/genblk1[3].U_adderTree/genblk1.subtree_a/genblk1.subtree_a/in_addends[14][0] (UnsignedAdderTree_DATA_WIDTH1_LENGTH27_2)
+                                                          0.00       4.02 r
+  U_neuron/U_pc/genblk1[3].U_adderTree/genblk1.subtree_a/genblk1.subtree_a/genblk1.subtree_b/in_addends[1][0] (UnsignedAdderTree_DATA_WIDTH1_LENGTH14_6)
+                                                          0.00       4.02 r
+  U_neuron/U_pc/genblk1[3].U_adderTree/genblk1.subtree_a/genblk1.subtree_a/genblk1.subtree_b/genblk1.subtree_a/in_addends[1][0] (UnsignedAdderTree_DATA_WIDTH1_LENGTH7_13)
+                                                          0.00       4.02 r
+  U_neuron/U_pc/genblk1[3].U_adderTree/genblk1.subtree_a/genblk1.subtree_a/genblk1.subtree_b/genblk1.subtree_a/genblk1.subtree_a/in_addends[1][0] (UnsignedAdderTree_DATA_WIDTH1_LENGTH3_15)
+                                                          0.00       4.02 r
+  U_neuron/U_pc/genblk1[3].U_adderTree/genblk1.subtree_a/genblk1.subtree_a/genblk1.subtree_b/genblk1.subtree_a/genblk1.subtree_a/genblk1.subtree_b/in_addends[0][0] (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_41)
+                                                          0.00       4.02 r
+  U_neuron/U_pc/genblk1[3].U_adderTree/genblk1.subtree_a/genblk1.subtree_a/genblk1.subtree_b/genblk1.subtree_a/genblk1.subtree_a/genblk1.subtree_b/genblk1.subtree_a/in_addends[0][0] (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_82)
+                                                          0.00       4.02 r
+  U_neuron/U_pc/genblk1[3].U_adderTree/genblk1.subtree_a/genblk1.subtree_a/genblk1.subtree_b/genblk1.subtree_a/genblk1.subtree_a/genblk1.subtree_b/genblk1.subtree_a/U1/Y (NBUFFX2_HVT)
+                                                          0.14       4.17 r
+  U_neuron/U_pc/genblk1[3].U_adderTree/genblk1.subtree_a/genblk1.subtree_a/genblk1.subtree_b/genblk1.subtree_a/genblk1.subtree_a/genblk1.subtree_b/genblk1.subtree_a/out_sum[0] (UnsignedAdderTree_DATA_WIDTH1_LENGTH1_82)
+                                                          0.00       4.17 r
+  U_neuron/U_pc/genblk1[3].U_adderTree/genblk1.subtree_a/genblk1.subtree_a/genblk1.subtree_b/genblk1.subtree_a/genblk1.subtree_a/genblk1.subtree_b/U1/Y (XOR2X2_HVT)
+                                                          0.27       4.43 r
+  U_neuron/U_pc/genblk1[3].U_adderTree/genblk1.subtree_a/genblk1.subtree_a/genblk1.subtree_b/genblk1.subtree_a/genblk1.subtree_a/genblk1.subtree_b/out_sum[0] (UnsignedAdderTree_DATA_WIDTH1_LENGTH2_41)
+                                                          0.00       4.43 r
+  U_neuron/U_pc/genblk1[3].U_adderTree/genblk1.subtree_a/genblk1.subtree_a/genblk1.subtree_b/genblk1.subtree_a/genblk1.subtree_a/U4/Y (NAND2X1_HVT)
+                                                          0.23       4.66 f
+  U_neuron/U_pc/genblk1[3].U_adderTree/genblk1.subtree_a/genblk1.subtree_a/genblk1.subtree_b/genblk1.subtree_a/genblk1.subtree_a/U1/Y (XNOR2X2_HVT)
+                                                          0.31       4.97 r
+  U_neuron/U_pc/genblk1[3].U_adderTree/genblk1.subtree_a/genblk1.subtree_a/genblk1.subtree_b/genblk1.subtree_a/genblk1.subtree_a/out_sum[1] (UnsignedAdderTree_DATA_WIDTH1_LENGTH3_15)
+                                                          0.00       4.97 r
+  U_neuron/U_pc/genblk1[3].U_adderTree/genblk1.subtree_a/genblk1.subtree_a/genblk1.subtree_b/genblk1.subtree_a/U4/Y (XOR3X2_HVT)
+                                                          0.46       5.43 f
+  U_neuron/U_pc/genblk1[3].U_adderTree/genblk1.subtree_a/genblk1.subtree_a/genblk1.subtree_b/genblk1.subtree_a/U2/Y (DELLN3X2_HVT)
+                                                          1.29       6.72 f
+  U_neuron/U_pc/genblk1[3].U_adderTree/genblk1.subtree_a/genblk1.subtree_a/genblk1.subtree_b/genblk1.subtree_a/U9/Y (IBUFFX2_HVT)
+                                                          0.15       6.87 r
+  U_neuron/U_pc/genblk1[3].U_adderTree/genblk1.subtree_a/genblk1.subtree_a/genblk1.subtree_b/genblk1.subtree_a/out_sum[1] (UnsignedAdderTree_DATA_WIDTH1_LENGTH7_13)
+                                                          0.00       6.87 r
+  U_neuron/U_pc/genblk1[3].U_adderTree/genblk1.subtree_a/genblk1.subtree_a/genblk1.subtree_b/add_58/U1_1/S (FADDX1_HVT)
+                                                          0.43       7.30 f
+  U_neuron/U_pc/genblk1[3].U_adderTree/genblk1.subtree_a/genblk1.subtree_a/genblk1.subtree_b/out_sum[1] (UnsignedAdderTree_DATA_WIDTH1_LENGTH14_6)
+                                                          0.00       7.30 f
+  U_neuron/U_pc/genblk1[3].U_adderTree/genblk1.subtree_a/genblk1.subtree_a/add_58/U1_1/S (FADDX1_HVT)
+                                                          0.36       7.66 r
+  U_neuron/U_pc/genblk1[3].U_adderTree/genblk1.subtree_a/genblk1.subtree_a/out_sum[1] (UnsignedAdderTree_DATA_WIDTH1_LENGTH27_2)
+                                                          0.00       7.66 r
+  U_neuron/U_pc/genblk1[3].U_adderTree/genblk1.subtree_a/add_58/A[1] (UnsignedAdderTree_DATA_WIDTH1_LENGTH55_2_DW01_add_0_DW01_add_21)
+                                                          0.00       7.66 r
+  U_neuron/U_pc/genblk1[3].U_adderTree/genblk1.subtree_a/add_58/U21/Y (NOR2X0_HVT)
+                                                          0.22       7.88 f
+  U_neuron/U_pc/genblk1[3].U_adderTree/genblk1.subtree_a/add_58/U47/Y (INVX1_HVT)
+                                                          0.06       7.94 r
+  U_neuron/U_pc/genblk1[3].U_adderTree/genblk1.subtree_a/add_58/U43/Y (OR2X1_HVT)
+                                                          0.11       8.04 r
+  U_neuron/U_pc/genblk1[3].U_adderTree/genblk1.subtree_a/add_58/U41/Y (NAND2X0_HVT)
+                                                          0.12       8.16 f
+  U_neuron/U_pc/genblk1[3].U_adderTree/genblk1.subtree_a/add_58/U2/Y (OR2X1_HVT)
+                                                          0.18       8.34 f
+  U_neuron/U_pc/genblk1[3].U_adderTree/genblk1.subtree_a/add_58/SUM[1] (UnsignedAdderTree_DATA_WIDTH1_LENGTH55_2_DW01_add_0_DW01_add_21)
+                                                          0.00       8.34 f
+  U_neuron/U_pc/genblk1[3].U_adderTree/genblk1.subtree_a/out_sum[1] (UnsignedAdderTree_DATA_WIDTH1_LENGTH55_2)
+                                                          0.00       8.34 f
+  U_neuron/U_pc/genblk1[3].U_adderTree/add_58/A[1] (UnsignedAdderTree_1_DW01_add_0_DW01_add_13)
+                                                          0.00       8.34 f
+  U_neuron/U_pc/genblk1[3].U_adderTree/add_58/U1_1/CO (FADDX1_HVT)
+                                                          0.20       8.54 f
+  U_neuron/U_pc/genblk1[3].U_adderTree/add_58/U5/Y (DELLN1X2_HVT)
+                                                          0.57       9.12 f
+  U_neuron/U_pc/genblk1[3].U_adderTree/add_58/U1_2/CO (FADDX1_HVT)
+                                                          0.18       9.29 f
+  U_neuron/U_pc/genblk1[3].U_adderTree/add_58/U1/Y (DELLN1X2_HVT)
+                                                          0.57       9.87 f
+  U_neuron/U_pc/genblk1[3].U_adderTree/add_58/U1_3/CO (FADDX1_HVT)
+                                                          0.17      10.04 f
+  U_neuron/U_pc/genblk1[3].U_adderTree/add_58/U2/Y (DELLN3X2_HVT)
+                                                          1.29      11.33 f
+  U_neuron/U_pc/genblk1[3].U_adderTree/add_58/U1_4/CO (FADDX1_HVT)
+                                                          0.18      11.51 f
+  U_neuron/U_pc/genblk1[3].U_adderTree/add_58/U3/Y (DELLN3X2_HVT)
+                                                          1.29      12.80 f
+  U_neuron/U_pc/genblk1[3].U_adderTree/add_58/U1_5/CO (FADDX1_HVT)
+                                                          0.18      12.98 f
+  U_neuron/U_pc/genblk1[3].U_adderTree/add_58/U4/Y (DELLN3X2_HVT)
+                                                          1.29      14.27 f
+  U_neuron/U_pc/genblk1[3].U_adderTree/add_58/U1_6/S (FADDX1_HVT)
+                                                          0.33      14.61 r
+  U_neuron/U_pc/genblk1[3].U_adderTree/add_58/U17/Y (INVX1_HVT)
+                                                          0.09      14.70 f
+  U_neuron/U_pc/genblk1[3].U_adderTree/add_58/U16/Y (INVX1_HVT)
+                                                          0.09      14.78 r
+  U_neuron/U_pc/genblk1[3].U_adderTree/add_58/SUM[6] (UnsignedAdderTree_1_DW01_add_0_DW01_add_13)
+                                                          0.00      14.78 r
+  U_neuron/U_pc/genblk1[3].U_adderTree/out_sum[6] (UnsignedAdderTree_1)
+                                                          0.00      14.78 r
+  U_neuron/U_pc/pc_out_comb[3][6] (PC)                    0.00      14.78 r
+  U_neuron/U_accumulator/val[3][6] (accumulator)          0.00      14.78 r
+  U_neuron/U_accumulator/add_44_G4/U1_6/CO (FADDX1_HVT)
+                                                          0.27      15.06 r
+  U_neuron/U_accumulator/U47/Y (NBUFFX2_HVT)              0.15      15.20 r
+  U_neuron/U_accumulator/add_44_G4/U1_7/CO (FADDX1_HVT)
+                                                          0.24      15.44 r
+  U_neuron/U_accumulator/U83/Y (NBUFFX2_HVT)              0.15      15.60 r
+  U_neuron/U_accumulator/U3/Y (NAND3X1_HVT)               0.28      15.87 f
+  U_neuron/U_accumulator/U520/Y (INVX0_HVT)               0.07      15.94 r
+  U_neuron/U_accumulator/U104/Y (NAND3X1_HVT)             0.27      16.21 f
+  U_neuron/U_accumulator/U103/Y (INVX1_HVT)               0.07      16.28 r
+  U_neuron/U_accumulator/U108/Y (NAND3X1_HVT)             0.27      16.55 f
+  U_neuron/U_accumulator/U528/Y (INVX0_HVT)               0.06      16.61 r
+  U_neuron/U_accumulator/U353/Y (AND3X1_HVT)              0.21      16.83 r
+  U_neuron/U_accumulator/U352/Y (AO22X1_HVT)              0.20      17.03 r
+  U_neuron/U_accumulator/sum_0_reg[3][16]/D (DFFARX1_HVT)
+                                                          0.01      17.04 r
+  data arrival time                                                 17.04
+
+  clock clk (rise edge)                                3800.00    3800.00
+  clock network delay (ideal)                             0.00    3800.00
+  clock uncertainty                                      -0.15    3799.85
+  U_neuron/U_accumulator/sum_0_reg[3][16]/CLK (DFFARX1_HVT)
+                                                          0.00    3799.85 r
+  library setup time                                     -0.21    3799.64
+  data required time                                              3799.64
+  --------------------------------------------------------------------------
+  data required time                                              3799.64
+  data arrival time                                                -17.04
+  --------------------------------------------------------------------------
+  slack (MET)                                                     3782.60
+
+
+1

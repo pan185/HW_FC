@@ -1,0 +1,101 @@
+Warning: Design 'FC' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FC
+Version: S-2021.06
+Date   : Fri Nov 12 12:18:18 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt0p85v25c   Library: saed32rvt_tt0p85v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: U_weight_bsg/U_weight_temporal_cnt/cnt_reg[0][1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U_neuron/U_accumulator/sum_0_reg[0][16]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FC                 70000                 saed32rvt_tt0p85v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U_weight_bsg/U_weight_temporal_cnt/cnt_reg[0][1]/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  U_weight_bsg/U_weight_temporal_cnt/cnt_reg[0][1]/Q (DFFARX1_RVT)
+                                                          0.19       0.19 f
+  U10491/Y (INVX1_RVT)                                    0.43       0.62 r
+  U8849/Y (NAND2X1_RVT)                                   0.39       1.01 f
+  U9465/Y (INVX1_RVT)                                     0.37       1.37 r
+  U10230/Y (NAND2X0_RVT)                                  0.19       1.57 f
+  U9467/Y (INVX1_RVT)                                     0.27       1.83 r
+  U9464/Y (INVX1_RVT)                                     0.46       2.30 f
+  U9021/Y (INVX1_RVT)                                     0.31       2.61 r
+  U5491/Y (AO22X1_RVT)                                    0.35       2.96 r
+  U5490/Y (AO221X1_RVT)                                   0.17       3.14 r
+  U5489/Y (AO222X1_RVT)                                   0.20       3.34 r
+  U5488/Y (AO222X1_RVT)                                   0.21       3.55 r
+  U10917/Y (OAI21X1_RVT)                                  0.20       3.75 f
+  U5487/Y (NAND2X0_RVT)                                   0.13       3.87 r
+  U5486/Y (AO22X1_RVT)                                    0.17       4.05 r
+  U5484/Y (AO22X1_RVT)                                    0.16       4.21 r
+  U10881/Y (XNOR2X1_RVT)                                  0.34       4.55 r
+  U10656/Y (XOR2X1_RVT)                                   0.38       4.93 f
+  U10433/Y (XNOR2X1_RVT)                                  0.37       5.30 r
+  U4991/Y (OR2X1_RVT)                                     0.21       5.51 r
+  U10427/Y (XNOR3X1_RVT)                                  0.40       5.91 r
+  U_neuron/U_pc/genblk1[0].U_adderTree/genblk1.subtree_a/genblk1.subtree_a/genblk1.subtree_b/add_58/U1_1/S (FADDX1_RVT)
+                                                          0.51       6.42 f
+  U_neuron/U_pc/genblk1[0].U_adderTree/genblk1.subtree_a/genblk1.subtree_a/add_58/U1_1/S (FADDX1_RVT)
+                                                          0.50       6.93 r
+  U_neuron/U_pc/genblk1[0].U_adderTree/genblk1.subtree_a/add_58/U1_1/CO (FADDX1_RVT)
+                                                          0.46       7.38 r
+  U_neuron/U_pc/genblk1[0].U_adderTree/genblk1.subtree_a/add_58/U1_2/CO (FADDX1_RVT)
+                                                          0.36       7.74 r
+  U_neuron/U_pc/genblk1[0].U_adderTree/genblk1.subtree_a/add_58/U1_3/CO (FADDX1_RVT)
+                                                          0.36       8.10 r
+  U_neuron/U_pc/genblk1[0].U_adderTree/genblk1.subtree_a/add_58/U1_4/S (FADDX1_RVT)
+                                                          0.41       8.51 f
+  U_neuron/U_pc/genblk1[0].U_adderTree/add_58/U1_4/S (FADDX1_RVT)
+                                                          0.52       9.03 r
+  U_neuron/U_accumulator/add_44/U1_4/CO (FADDX1_RVT)      0.51       9.54 r
+  U_neuron/U_accumulator/add_44/U1_5/CO (FADDX1_RVT)      0.36       9.90 r
+  U_neuron/U_accumulator/add_44/U1_6/CO (FADDX1_RVT)      0.36      10.26 r
+  U11101/Y (AND2X1_RVT)                                   0.18      10.44 r
+  U5067/Y (AND3X1_RVT)                                    0.17      10.60 r
+  U5065/Y (AND4X1_RVT)                                    0.20      10.80 r
+  U5064/Y (AND2X1_RVT)                                    0.19      10.99 r
+  U5063/Y (AND2X1_RVT)                                    0.19      11.18 r
+  U5062/Y (NAND2X0_RVT)                                   0.19      11.36 f
+  U10865/Y (INVX1_RVT)                                    0.20      11.56 r
+  U5061/Y (AO21X1_RVT)                                    0.16      11.72 r
+  U5059/Y (NAND2X0_RVT)                                   0.13      11.86 f
+  U_neuron/U_accumulator/sum_0_reg[0][16]/D (DFFARX1_RVT)
+                                                          0.10      11.96 f
+  data arrival time                                                 11.96
+
+  clock clk (rise edge)                                1900.00    1900.00
+  clock network delay (ideal)                             0.00    1900.00
+  clock uncertainty                                      -0.15    1899.85
+  U_neuron/U_accumulator/sum_0_reg[0][16]/CLK (DFFARX1_RVT)
+                                                          0.00    1899.85 r
+  library setup time                                     -0.06    1899.79
+  data required time                                              1899.79
+  --------------------------------------------------------------------------
+  data required time                                              1899.79
+  data arrival time                                                -11.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                     1887.83
+
+
+1

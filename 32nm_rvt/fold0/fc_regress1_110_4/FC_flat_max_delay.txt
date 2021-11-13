@@ -1,0 +1,102 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FC
+Version: S-2021.06
+Date   : Wed Nov 10 17:47:49 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt0p85v25c   Library: saed32rvt_tt0p85v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: U_weight_bsg/U_weight_temporal_cnt/cnt_reg[3][2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U_neuron/U_accumulator/sum_1_reg[1][16]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FC                 140000                saed32rvt_tt0p85v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U_weight_bsg/U_weight_temporal_cnt/cnt_reg[3][2]/CLK (DFFARX1_RVT)
+                                                          0.00 #     0.00 r
+  U_weight_bsg/U_weight_temporal_cnt/cnt_reg[3][2]/Q (DFFARX1_RVT)
+                                                          0.15       0.15 f
+  U20139/Y (INVX1_RVT)                                    0.27       0.43 r
+  U19400/Y (NBUFFX2_RVT)                                  0.43       0.86 r
+  U16364/Y (NAND2X0_RVT)                                  0.47       1.33 f
+  U18240/Y (INVX1_RVT)                                    0.29       1.62 r
+  U10953/Y (AND2X1_RVT)                                   0.30       1.92 r
+  U18239/Y (INVX1_RVT)                                    0.51       2.43 f
+  U17699/Y (INVX1_RVT)                                    0.26       2.68 r
+  U10929/Y (AO22X1_RVT)                                   0.44       3.12 r
+  U10928/Y (AO221X1_RVT)                                  0.19       3.31 r
+  U10927/Y (AO222X1_RVT)                                  0.21       3.52 r
+  U10926/Y (AO222X1_RVT)                                  0.22       3.74 r
+  U10925/Y (AO21X1_RVT)                                   0.20       3.94 r
+  U10922/Y (AO22X1_RVT)                                   0.18       4.12 r
+  U10920/Y (AO22X1_RVT)                                   0.17       4.29 r
+  U19946/Y (XOR2X1_RVT)                                   0.31       4.60 f
+  U19197/Y (XOR2X1_RVT)                                   0.37       4.98 r
+  U18650/Y (XNOR2X1_RVT)                                  0.40       5.38 r
+  U6604/Y (OR2X1_RVT)                                     0.23       5.61 r
+  U18637/Y (XNOR3X1_RVT)                                  0.43       6.04 r
+  U_neuron/U_pc/genblk1[1].U_adderTree/genblk1.subtree_b/genblk1.subtree_b/genblk1.subtree_b/add_58/U1_1/S (FADDX1_RVT)
+                                                          0.54       6.59 f
+  U_neuron/U_pc/genblk1[1].U_adderTree/genblk1.subtree_b/genblk1.subtree_b/add_58/U1_1/S (FADDX1_RVT)
+                                                          0.54       7.12 r
+  U_neuron/U_pc/genblk1[1].U_adderTree/genblk1.subtree_b/add_58/U1_1/S (FADDX1_RVT)
+                                                          0.54       7.66 f
+  U_neuron/U_pc/genblk1[1].U_adderTree/add_58/U1_1/S (FADDX1_RVT)
+                                                          0.55       8.21 r
+  U_neuron/U_accumulator/add_132_G2/U1_1/CO (FADDX1_RVT)
+                                                          0.55       8.76 r
+  U_neuron/U_accumulator/add_132_G2/U1_2/CO (FADDX1_RVT)
+                                                          0.38       9.15 r
+  U_neuron/U_accumulator/add_132_G2/U1_3/CO (FADDX1_RVT)
+                                                          0.38       9.53 r
+  U_neuron/U_accumulator/add_132_G2/U1_4/CO (FADDX1_RVT)
+                                                          0.38       9.91 r
+  U_neuron/U_accumulator/add_132_G2/U1_5/CO (FADDX1_RVT)
+                                                          0.38      10.30 r
+  U_neuron/U_accumulator/add_132_G2/U1_6/CO (FADDX1_RVT)
+                                                          0.38      10.68 r
+  U20399/Y (AND2X1_RVT)                                   0.19      10.87 r
+  U7039/Y (AND3X1_RVT)                                    0.18      11.05 r
+  U7037/Y (AND4X1_RVT)                                    0.21      11.26 r
+  U7036/Y (AND2X1_RVT)                                    0.20      11.46 r
+  U7035/Y (AND2X1_RVT)                                    0.20      11.66 r
+  U7034/Y (NAND2X0_RVT)                                   0.20      11.87 f
+  U19671/Y (INVX1_RVT)                                    0.21      12.08 r
+  U7033/Y (AO21X1_RVT)                                    0.17      12.25 r
+  U7031/Y (NAND2X0_RVT)                                   0.14      12.39 f
+  U_neuron/U_accumulator/sum_1_reg[1][16]/D (DFFARX1_RVT)
+                                                          0.11      12.51 f
+  data arrival time                                                 12.51
+
+  clock clk (rise edge)                                7600.00    7600.00
+  clock network delay (ideal)                             0.00    7600.00
+  clock uncertainty                                      -0.15    7599.85
+  U_neuron/U_accumulator/sum_1_reg[1][16]/CLK (DFFARX1_RVT)
+                                                          0.00    7599.85 r
+  library setup time                                     -0.06    7599.79
+  data required time                                              7599.79
+  --------------------------------------------------------------------------
+  data required time                                              7599.79
+  data arrival time                                                -12.51
+  --------------------------------------------------------------------------
+  slack (MET)                                                     7587.29
+
+
+1

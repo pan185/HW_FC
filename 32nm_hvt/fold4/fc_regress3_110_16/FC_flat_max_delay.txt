@@ -1,0 +1,130 @@
+Warning: Design 'FC' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FC
+Version: S-2021.06
+Date   : Fri Nov 12 14:57:25 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt0p85v25c   Library: saed32hvt_tt0p85v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: U_weight_bsg/U_weight_temporal_cnt/cnt_reg[1][2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U_neuron/U_accumulator/sum_0_reg[2][16]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FC                 280000                saed32hvt_tt0p85v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U_weight_bsg/U_weight_temporal_cnt/cnt_reg[1][2]/CLK (DFFARX1_HVT)
+                                                          0.00 #     0.00 r
+  U_weight_bsg/U_weight_temporal_cnt/cnt_reg[1][2]/Q (DFFARX1_HVT)
+                                                          0.40       0.40 f
+  U31399/Y (INVX1_HVT)                                    0.26       0.66 r
+  U35855/Y (NBUFFX2_HVT)                                  0.24       0.90 r
+  U41598/Y (NBUFFX2_HVT)                                  0.28       1.18 r
+  U26209/Y (AND2X1_HVT)                                   0.47       1.65 r
+  U41597/Y (NBUFFX2_HVT)                                  0.22       1.87 r
+  U35755/Y (NBUFFX2_HVT)                                  0.24       2.11 r
+  U40925/Y (NBUFFX2_HVT)                                  0.28       2.40 r
+  U26204/Y (AND2X1_HVT)                                   0.53       2.92 r
+  U41178/Y (NBUFFX2_HVT)                                  0.22       3.14 r
+  U40929/Y (NBUFFX2_HVT)                                  0.24       3.38 r
+  U40615/Y (NBUFFX2_HVT)                                  0.26       3.65 r
+  U24307/Y (AO22X1_HVT)                                   0.53       4.18 r
+  U24306/Y (AO221X1_HVT)                                  0.29       4.46 r
+  U24305/Y (AO21X1_HVT)                                   0.34       4.80 r
+  U33815/Y (AOI222X1_HVT)                                 0.49       5.29 f
+  U33816/Y (INVX1_HVT)                                    0.22       5.51 r
+  U24299/Y (AO22X1_HVT)                                   0.27       5.78 r
+  U24298/Y (AO21X1_HVT)                                   0.33       6.10 r
+  U24294/Y (AO22X1_HVT)                                   0.32       6.43 r
+  U24292/Y (AO22X1_HVT)                                   0.29       6.72 r
+  U42608/Y (XNOR2X1_HVT)                                  0.49       7.21 f
+  U42031/Y (XOR2X1_HVT)                                   0.57       7.78 r
+  U41609/Y (XOR2X1_HVT)                                   0.52       8.30 f
+  U35122/Y (NAND2X1_HVT)                                  0.33       8.63 r
+  U33366/Y (INVX0_HVT)                                    0.26       8.88 f
+  U32246/Y (AND2X1_HVT)                                   0.31       9.20 f
+  U33369/Y (NAND2X0_HVT)                                  0.16       9.35 r
+  U32035/Y (AND2X1_HVT)                                   0.25       9.60 r
+  U33365/Y (NAND2X1_HVT)                                  0.33       9.94 f
+  U31600/Y (NAND2X0_HVT)                                  0.27      10.21 r
+  U31615/Y (NAND2X0_HVT)                                  0.21      10.42 f
+  U31616/Y (INVX0_HVT)                                    0.19      10.61 r
+  U31592/Y (NAND2X1_HVT)                                  0.32      10.93 f
+  U31632/Y (NOR2X4_HVT)                                   0.38      11.31 r
+  U31633/Y (INVX0_HVT)                                    0.20      11.51 f
+  U31622/Y (NOR2X0_HVT)                                   0.29      11.80 r
+  U31638/Y (NOR2X0_HVT)                                   0.29      12.09 f
+  U31639/Y (INVX0_HVT)                                    0.17      12.26 r
+  U31625/Y (NOR2X0_HVT)                                   0.27      12.53 f
+  U31617/Y (INVX0_HVT)                                    0.18      12.72 r
+  U_neuron/U_pc/genblk1[2].U_adderTree/genblk1.subtree_a/genblk1.subtree_a/add_58/U1_2/CO (FADDX1_HVT)
+                                                          0.64      13.36 r
+  U35012/Y (NBUFFX2_HVT)                                  0.26      13.61 r
+  U31361/Y (NOR2X1_HVT)                                   0.35      13.96 f
+  U33090/Y (INVX0_HVT)                                    0.17      14.13 r
+  U33083/Y (NOR2X0_HVT)                                   0.29      14.42 f
+  U32027/Y (OR2X1_HVT)                                    0.24      14.66 f
+  U31918/Y (OR2X1_HVT)                                    0.26      14.92 f
+  U202/Y (XOR3X2_HVT)                                     0.75      15.67 r
+  U32817/Y (IBUFFX2_HVT)                                  0.33      16.00 f
+  U32824/Y (NOR2X0_HVT)                                   0.35      16.35 r
+  U32091/Y (OR2X1_HVT)                                    0.25      16.59 r
+  U32826/Y (NOR2X0_HVT)                                   0.33      16.92 f
+  U32880/Y (NOR2X0_HVT)                                   0.40      17.32 r
+  U32094/Y (OR2X1_HVT)                                    0.25      17.57 r
+  U32882/Y (NOR2X0_HVT)                                   0.31      17.88 f
+  U32872/Y (INVX0_HVT)                                    0.24      18.12 r
+  U32110/Y (AND2X1_HVT)                                   0.31      18.43 r
+  U32662/Y (NAND2X0_HVT)                                  0.20      18.63 f
+  U32108/Y (AND2X1_HVT)                                   0.25      18.88 f
+  U32656/Y (NAND2X1_HVT)                                  0.28      19.16 r
+  U_neuron/U_accumulator/add_44_G3/U1_5/CO (FADDX1_HVT)
+                                                          0.72      19.88 r
+  U34340/Y (NBUFFX2_HVT)                                  0.26      20.14 r
+  U_neuron/U_accumulator/add_44_G3/U1_6/CO (FADDX1_HVT)
+                                                          0.51      20.65 r
+  U34691/Y (NBUFFX2_HVT)                                  0.26      20.91 r
+  U43814/Y (AND2X1_HVT)                                   0.28      21.19 r
+  U20583/Y (AND3X1_HVT)                                   0.32      21.51 r
+  U34647/Y (AND4X2_HVT)                                   0.50      22.00 r
+  U20581/Y (AND2X1_HVT)                                   0.29      22.29 r
+  U20580/Y (AND2X1_HVT)                                   0.30      22.59 r
+  U20579/Y (AND2X1_HVT)                                   0.33      22.92 r
+  U20578/Y (AO21X1_HVT)                                   0.31      23.24 r
+  U20576/Y (NAND2X0_HVT)                                  0.22      23.46 f
+  U_neuron/U_accumulator/sum_0_reg[2][16]/D (DFFARX1_HVT)
+                                                          0.12      23.58 f
+  data arrival time                                                 23.58
+
+  clock clk (rise edge)                                1900.00    1900.00
+  clock network delay (ideal)                             0.00    1900.00
+  clock uncertainty                                      -0.15    1899.85
+  U_neuron/U_accumulator/sum_0_reg[2][16]/CLK (DFFARX1_HVT)
+                                                          0.00    1899.85 r
+  library setup time                                     -0.13    1899.72
+  data required time                                              1899.72
+  --------------------------------------------------------------------------
+  data required time                                              1899.72
+  data arrival time                                                -23.58
+  --------------------------------------------------------------------------
+  slack (MET)                                                     1876.14
+
+
+1

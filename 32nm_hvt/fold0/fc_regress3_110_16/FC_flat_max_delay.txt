@@ -1,0 +1,114 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FC
+Version: S-2021.06
+Date   : Thu Nov 11 06:35:35 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: tt0p85v25c   Library: saed32hvt_tt0p85v25c
+Wire Load Model Mode: enclosed
+
+  Startpoint: U_in_bsg/U_input_rng/u_SobolRNG/out_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: U_neuron/U_accumulator/sum_0_reg[14][16]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FC                 540000                saed32hvt_tt0p85v25c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U_in_bsg/U_input_rng/u_SobolRNG/out_reg[0]/CLK (DFFARX1_HVT)
+                                                          0.00 #     0.00 r
+  U_in_bsg/U_input_rng/u_SobolRNG/out_reg[0]/Q (DFFARX1_HVT)
+                                                          0.40       0.40 f
+  U84184/Y (INVX1_HVT)                                    0.34       0.74 r
+  U84183/Y (INVX1_HVT)                                    0.46       1.20 f
+  U84182/Y (INVX2_HVT)                                    0.42       1.62 r
+  U64708/Y (AND2X1_HVT)                                   0.79       2.41 r
+  U74122/Y (NBUFFX2_HVT)                                  0.37       2.79 r
+  U80711/Y (NBUFFX2_HVT)                                  0.37       3.15 r
+  U64706/Y (AND2X1_HVT)                                   0.48       3.63 r
+  U74124/Y (NBUFFX2_HVT)                                  0.34       3.97 r
+  U80710/Y (NBUFFX2_HVT)                                  0.35       4.32 r
+  U64082/Y (AO221X1_HVT)                                  0.61       4.93 r
+  U64081/Y (OA222X1_HVT)                                  0.40       5.34 r
+  U64078/Y (AO221X1_HVT)                                  0.37       5.71 r
+  U69708/Y (AOI222X1_HVT)                                 0.51       6.22 f
+  U69709/Y (INVX1_HVT)                                    0.23       6.45 r
+  U64075/Y (AO221X1_HVT)                                  0.27       6.72 r
+  U64074/Y (AO21X1_HVT)                                   0.35       7.08 r
+  U64072/Y (AO22X1_HVT)                                   0.33       7.41 r
+  U66935/Y (AOI22X1_HVT)                                  0.38       7.78 f
+  U66830/Y (INVX4_HVT)                                    0.74       8.53 r
+  U65833/Y (INVX2_HVT)                                    1.13       9.66 f
+  U3915/Y (XOR2X2_HVT)                                    0.87      10.53 r
+  U83525/Y (XOR2X1_HVT)                                   0.62      11.14 f
+  U81924/Y (XNOR2X1_HVT)                                  0.58      11.73 f
+  U28614/Y (OR2X1_HVT)                                    0.33      12.05 f
+  U67831/Y (INVX0_HVT)                                    0.26      12.32 r
+  U67151/Y (AND2X1_HVT)                                   0.33      12.64 r
+  U67833/Y (NAND2X0_HVT)                                  0.21      12.85 f
+  U66891/Y (AND2X1_HVT)                                   0.26      13.12 f
+  U67829/Y (NAND2X1_HVT)                                  0.29      13.41 r
+  U_neuron/U_pc/genblk1[14].U_adderTree/genblk1.subtree_a/genblk1.subtree_a/genblk1.subtree_b/add_58/U1_1/S (FADDX1_HVT)
+                                                          0.84      14.25 f
+  U_neuron/U_pc/genblk1[14].U_adderTree/genblk1.subtree_a/genblk1.subtree_a/add_58/U1_1/S (FADDX1_HVT)
+                                                          0.79      15.04 r
+  U_neuron/U_pc/genblk1[14].U_adderTree/genblk1.subtree_a/add_58/U1_1/S (FADDX1_HVT)
+                                                          0.89      15.92 f
+  U_neuron/U_pc/genblk1[14].U_adderTree/add_58/U1_1/S (FADDX1_HVT)
+                                                          0.83      16.75 r
+  U_neuron/U_accumulator/add_134_G15/U1_1/CO (FADDX1_HVT)
+                                                          0.81      17.56 r
+  U71898/Y (NBUFFX2_HVT)                                  0.27      17.83 r
+  U_neuron/U_accumulator/add_134_G15/U1_2/CO (FADDX1_HVT)
+                                                          0.56      18.39 r
+  U_neuron/U_accumulator/add_134_G15/U1_3/CO (FADDX1_HVT)
+                                                          0.59      18.98 r
+  U_neuron/U_accumulator/add_134_G15/U1_4/CO (FADDX1_HVT)
+                                                          0.59      19.58 r
+  U_neuron/U_accumulator/add_134_G15/U1_5/CO (FADDX1_HVT)
+                                                          0.57      20.15 r
+  U70999/Y (NBUFFX2_HVT)                                  0.27      20.42 r
+  U_neuron/U_accumulator/add_134_G15/U1_6/CO (FADDX1_HVT)
+                                                          0.54      20.96 r
+  U71701/Y (NBUFFX2_HVT)                                  0.27      21.23 r
+  U89408/Y (AND2X1_HVT)                                   0.29      21.52 r
+  U30026/Y (AND3X1_HVT)                                   0.34      21.86 r
+  U72975/Y (AND4X2_HVT)                                   0.51      22.37 r
+  U72974/Y (NAND2X1_HVT)                                  0.36      22.73 f
+  U30022/Y (NOR2X0_HVT)                                   0.35      23.07 r
+  U30021/Y (AND2X1_HVT)                                   0.35      23.42 r
+  U30020/Y (AO21X1_HVT)                                   0.33      23.75 r
+  U30018/Y (NAND2X0_HVT)                                  0.23      23.98 f
+  U_neuron/U_accumulator/sum_0_reg[14][16]/D (DFFARX1_HVT)
+                                                          0.13      24.11 f
+  data arrival time                                                 24.11
+
+  clock clk (rise edge)                                7600.00    7600.00
+  clock network delay (ideal)                             0.00    7600.00
+  clock uncertainty                                      -0.15    7599.85
+  U_neuron/U_accumulator/sum_0_reg[14][16]/CLK (DFFARX1_HVT)
+                                                          0.00    7599.85 r
+  library setup time                                     -0.13    7599.72
+  data required time                                              7599.72
+  --------------------------------------------------------------------------
+  data required time                                              7599.72
+  data arrival time                                                -24.11
+  --------------------------------------------------------------------------
+  slack (MET)                                                     7575.61
+
+
+1
